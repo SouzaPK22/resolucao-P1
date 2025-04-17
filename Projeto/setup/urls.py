@@ -19,4 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',TodoListView.as_view(), name='todo_list'),
+    path('create/', TodoCreateView.as_view(), name'todo_create'),
 ]
